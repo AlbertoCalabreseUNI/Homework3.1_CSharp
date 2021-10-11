@@ -54,6 +54,10 @@ namespace Homework3._1_CSharp
             }
 
             timer.Start();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             foreach (CDay day in sample)
             {
                 label1.Text = "Mean: " + calculateMean(day.nuovi_positivi).ToString();
