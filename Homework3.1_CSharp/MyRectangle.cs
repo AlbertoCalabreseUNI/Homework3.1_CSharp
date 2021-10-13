@@ -13,7 +13,7 @@ namespace Homework3._1_CSharp
         public int posY { get; set; }
         public int width { get; set; }
         public int height { get; set; }
-        private int finalHeight { get; set; }
+        public int finalHeight { get; set; }
         public Brush rectColor { get; set; }
         private Pen borderColor = Pens.Black;
         private MyPictureBox pictureBox;
@@ -38,8 +38,8 @@ namespace Homework3._1_CSharp
         public void Update()
         {
             if (this.height >= this.finalHeight) return;
-            height += 5;
-            posY -= 5;
+            this.height += 5;
+            this.posY -= 5;
         }
     }
 }
